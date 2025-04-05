@@ -1,5 +1,4 @@
 def add_user(users, name, age):
-    """Добавляет пользователя в словарь"""
     try:
         age = int(age)
         if age <= 0:
@@ -10,7 +9,6 @@ def add_user(users, name, age):
         print(f"Ошибка: {e}. Возраст должен быть целым положительным числом")
 
 def remove_user(users, name):
-    """Удаляет пользователя по имени"""
     if name in users:
         del users[name]
         print(f"Пользователь {name} успешно удален")
@@ -18,7 +16,6 @@ def remove_user(users, name):
         print(f"Ошибка: Пользователь {name} не найден")
 
 def list_users(users):
-    """Выводит список всех пользователей"""
     if not users:
         print("Список пользователей пуст")
     else:
